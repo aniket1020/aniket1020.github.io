@@ -1,0 +1,37 @@
+@mixin themed($property, $light-value, $dark-value) {
+  [data-theme="light"] & {
+    #{$property}: $light-value;
+  }
+
+  [data-theme="dark"] & {
+    #{$property}: $dark-value;
+  }
+}
+
+#theme-toggler:before {
+  @include themed(
+  content
+  ,url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABWElEQVRIidWWTU6CMRCGnxiNsNCVNBE8ldFj6B38uYduOIEeQPwwxgVg4CKAJv4swAVtrCVfmfYbNbzJbNrOPNNJfwbWUE/A43+A59aytKGYiAq4BdQV4m8BTeniJvAOjAATWVcA95F5AwyBN2BfAq5Zh7kAHoOObIwhsJ3jGNtVmQoqJG6ALtAOxi6BAfBqrQ9cBIC29c2p1pKOgSnf1yi0KXCkAQqhswjU2UwTbojvNLQJ0FgVVPKAnAI7CYnuAicJ60v1jHy3zvrS4O74Oyu8uZQy+wctGrus1NmPv8BfHHvAL5RacrhupRl6usnwWVLqdRoDexpgWDwK0gfkUAvqwycR6FgLaoAH4MobawDnQA94sdYDzvhZ3msyPwn/W7zLSLpDxrdY96BajYCojWoBn9YhBl3V3rrW54OEvuuARQsUk6S9rdlYqlrPvnqzgm+X6p/J3+sLs6ivjx9F5zoAAAAASUVORK5CYII=")
+  ,url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABfUlEQVRYhe2WQU7CQBiFGbfiClqM53BpgnoBg/EgujDEnchl2GngFkTRRA0u9AwIusXPha9JC+04LRODyksmTTvvf/+bdvr/Uyqt8JuBsIjGmi8zf88AEAAdICwqDoTSCIoEd/SJH4BaBidzDwA1xQJ0ihgIgHsJPAFbOWLDWOwQ2MxtQEI14FFCfcBIvA3cAu8aA+BCpo24KDb17eU10Qd2gCNgQjbGwKG4/YWTx0wYJf9QokugDqxr7AJXmpsCDcB4SS4DYWzlpxZeU5xXoOrTQDtauQO3K27Lp4E7idYduHviDookmoOev+m27KCxIe7EphnBtRTnaTjR5nOKSRgwKdDUi67bDpoR5/kbzXkDFvR0PXbgnszELA6+KtxYn7Bp4Z2JMwIqPg0YVbipEnS128sa+0AvVogOvBUikqW4oSKThZGS+ynFpDejKtACbvR7ToBr4Byo4KsZkWzHQ366HbMkBxLrkcxmQPPFj2SOJq0GXLC8p+IV/g0+AWJm0ISMMkwYAAAAAElFTkSuQmCC")
+ )
+}
+
+.navbar-themed {
+  .navbar-brand,
+  .navbar-nav .nav-link.active {
+    @include themed(color, $text-black, $text-white);
+  }
+
+  .navbar-nav .nav-link {
+    @include themed(color, rgba($text-black, 0.5), rgba($text-white, 0.5));
+  }
+}
+
+.text-themed {
+  @include themed(color, $text-black, $text-white);
+}
+
+.bg-themed {
+  @include themed(background-color, $light, $dark);
+}
+
