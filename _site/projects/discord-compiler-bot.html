@@ -21,12 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projects">
-  <meta property="og:description" content="Syringes :syringe: are fun when you share them">
-  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:title" content="Discord Compiler Bot">
+  <meta property="og:description" content="Revant bot can retrieve code from discord messages containing a code block and bot commands which is then executed and the output is returned.">
+  <meta property="og:image" content="/assets/discord.png">
 
-  <title>Projects</title>
-  <meta name="description" content="Syringes :syringe: are fun when you share them">
+  <title>Discord Compiler Bot</title>
+  <meta name="description" content="Revant bot can retrieve code from discord messages containing a code block and bot commands which is then executed and the output is returned.">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -59,8 +59,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
-<a class="nav-item nav-link active" href="/projects/">Projects</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
 
       <a class="nav-item nav-link " href="/blog/">Blog</a>
 
@@ -77,27 +76,25 @@
 
 </nav>
 
-    
-<div class="card-columns m-3 mt-5">
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <p><img src="/assets/discord.png" alt="preview" /></p>
 
-  <!-- Remote Projects -->
-  
+<h1 id="discord-compiler-bot">Discord Compiler Bot</h1>
 
-  <!-- Local Projects -->
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/discord-compiler-bot" class="project card text-themed"><img id="discord-compiler-bot-img" class="card-img-top" src="/assets/discord.png" alt="Discord Compiler Bot"><div class="card-body">
-      <h5 id="discord-compiler-bot-name" class="card-title">Discord Compiler Bot
-      </h5>
-      <p id="discord-compiler-bot-desc" class="card-text">Revant bot can retrieve code from discord messages containing a code block and bot commands which is then executed and the output is returned.</p>
-      <p id="discord-compiler-bot-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Rust</span><span class="badge badge-pill text-primary border border-primary ml-1">Serenity</span><span class="badge badge-pill text-primary border border-primary ml-1">Multithreading</span><span class="badge badge-pill text-primary border border-primary ml-1">Posix</span></p>
-    </div>
-  </a>
+<ul>
+  <li>Revant bot can retrieve code from discord messages containing a code block and bot commands.</li>
+  <li>The retrieved code is compiled and executed and its result is posted back on the discord channel.</li>
+  <li>The bot is multithreaded and makes use of 8 long-running threads which are associated with workers.</li>
+  <li>Each worker makes POSIX calls to restrict CPU and memory usage for its subprocess.</li>
+</ul>
+
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/aniket1020/Revant-bot">
+  Learn More
+</a>
+</p>
+
 </div>
-
-  
-
-</div>
-
   </main>
   <footer class="mt-auto py-3 text-center">
   <!--
@@ -107,23 +104,39 @@
   </small>
   -->
 
-  <div class="container-fluid justify-content-center">
-<a class="social mx-1" href="mailto:aniket.1020@gmail.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:aniket.1020@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
       <i class="fas fa-envelope fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.github.com/aniket1020" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
+    </a><a class="social mx-1"  href="https://www.github.com/aniket1020"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.gitlab.com/aniket_ia" style="color: #6c757d" onmouseover="this.style.color='#fca326'" onmouseout="this.style.color='#6c757d'">
+    </a><a class="social mx-1"  href="https://www.gitlab.com/aniket_ia"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#fca326'"
+       onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-gitlab fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.kaggle.com/aniketinamdar" style="color: #6c757d" onmouseover="this.style.color='#20beff'" onmouseout="this.style.color='#6c757d'">
+    </a><a class="social mx-1"  href="https://www.kaggle.com/aniketinamdar"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#20beff'"
+       onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-kaggle fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.linkedin.com/in/aniket-inamdar-622b10160" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/aniket-inamdar-622b10160"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-linkedin-in fa-1x"></i>
-    </a><a class="social mx-1" href="https://medium.com/@aniket-1020" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
+    </a><a class="social mx-1"  href="https://medium.com/@aniket-1020"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#00ab6c'"
+       onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-medium fa-1x"></i>
     </a>
 
-</div>
-<small id="attribution">
+</div><small id="attribution">
    Jekyll theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
   </small>
 

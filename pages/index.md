@@ -6,7 +6,7 @@ permalink: /
 {% include landing.html %}
 
 ##### **About Me**
-Hi, I am **{{site.author.name}}**, :v:<br>
+Hi, I am **{{site.author.name}}**, :wave:<br>
 This is my webpage where I showcase some of my projects and blogs.
 
 <!--
